@@ -1,2 +1,6 @@
 # Kevin Dai's personal portfolio website
-created using html/css/js
+Created using html/css/js
+
+
+start: 12/20/21
+end:
