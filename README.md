@@ -1,1 +1,2 @@
-# KevinDai11.github.io
+# Kevin Dai's personal portfolio website
+# created using html/css/js
