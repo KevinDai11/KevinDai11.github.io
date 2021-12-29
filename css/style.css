@@ -44,6 +44,11 @@
 
 
 /*general style*/
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -188,10 +193,33 @@ header{
     top:1em;
     z-index: 1000;
 }
+.nav_open .nav{
+    transform: translateX(0);
+}
+
+.nav_open .nav_toggle{
+    position: fixed;
+}
+.nav_open .hamburger{
+    transform: rotate(.625turn);
+}
+.nav_open .hamburger::before{
+    transform: rotate(90deg) translateX(-6px);
+}
+.nav_open .hamburger::after{
+    opacity: 0;
+}
+
+
+
+
 .hamburger{
     display: block;
     position: relative;
 }
+
+
+
 
 .hamburger,
 .hamburger::after,
@@ -263,6 +291,16 @@ header{
     max-width: 300px;
     max-height: 450px;
     box-shadow: var(--bs);
+}
+.about_me_link{
+    margin-top: 1em;
+    width: 220px;
+    height: 40px;
+    border-radius: 40px;
+    font-weight: var(--fw-bold);
+    background-image: linear-gradient(to bottom right, black,maroon,var(--clr-light-maroon),white);
+    text-align: center;
+    padding: 0 0 9% 0;
 }
 @media(min-width: 600px){
     .about_me{
