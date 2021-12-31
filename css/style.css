@@ -82,7 +82,7 @@ a:focus{
 }
 
 /*typography*/
-strong{font-weight: var(--fw-bold); text-align: center;}
+strong{font-weight: var(--fw-bold);}
 h1,
 h2,
 h3{
@@ -249,6 +249,8 @@ header{
 
 .intro_img{
     box-shadow: var(--bs);
+    min-height: 300px;
+    min-width: 300px;
 }
 @media (min-width:600px){
     .intro{
@@ -259,8 +261,10 @@ header{
         grid-template-areas: 
             "img title"
             "img subtitle";
-        grid-template-columns: min-content max-content;
+        grid-template-columns: auto max-content;
+        
         }
+        
     .section_Subtitle_intro{
             align-self: start;
             grid-column: -1/1;
@@ -305,7 +309,6 @@ header{
 @media(min-width: 600px){
     .about_me{
         display: grid;
-        
         grid-template-areas:
             "title title"
             "subtitle img"
@@ -400,7 +403,7 @@ header{
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 
-.portfolio_Item{
+.portfolio_item{
     background: var(--clr-light-maroon);
     overflow:hidden;
 }
@@ -410,13 +413,13 @@ header{
         transform 750ms cubic-bezier(.5, 0, .2, 1),
         opacity 250ms linear;
 }
-.portfolio_Item:focus{
+.portfolio_item:focus{
     position: relative;
     z-index: 2;
 }       
 
 .portfolio_img:hover,
-.portfolio_Item:focus .portfolio_img{
+.portfolio_item:focus .portfolio_img{
     transform: scale(1.2);          
     opacity: .75;
 }
@@ -431,7 +434,9 @@ header{
     padding: 2.5em 0;
     font-size:var(--fs-h3);
     font-weight: var(--fw-bold);
+    
 }
+
 
 .socials{
     list-style: none;
@@ -447,4 +452,60 @@ header{
 .sociallist_link{
     padding: .5em;
 }
+
+
+/* individual portfolio item styling*/
+.portfolio_item_indiv{
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.detail_text{
+    text-align: center;
+}
+.filler{
+    content: '';
+    display: block;
+    width: 40em;
+    height: 1px;
+    margin: -3em auto 0em;
+    background: var(--clr-teal);
+    opacity: 0.5;
+}
+@media (min-width: 600px){
+    .detail_text{
+        margin-top: -80px;
+        text-align: center;
+        align-items: center;
+        display: grid;
+        grid-template-areas: 
+            "text text"
+            "source link";
+        padding: 5em;
+    }
+    .portfolio_item_indiv{
+        grid-area: text; 
+    }
+    .source{
+        grid-area: source;
+        margin-top: 1em;
+        border-radius: 40px;
+        font-weight: var(--fw-bold);
+        background-image: linear-gradient(to bottom right, black,maroon,var(--clr-light-maroon),white);
+        text-align: center;
+        padding: 1em
+    }
+    .link{
+        grid-area: link;
+        margin-top: 1em;
+        border-radius: 40px;
+        font-weight: var(--fw-bold);
+        background-image: linear-gradient(to bottom right, black,maroon,var(--clr-light-maroon),white);
+        text-align: center;
+        padding: 1em 1.5em 1em;
+    }
+}
+
+
 
