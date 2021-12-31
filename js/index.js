@@ -15,3 +15,8 @@ navLinks.forEach(link => {
 navLinkF.addEventListener('click', () =>{
     document.body.classList.remove('nav_open');
 });
+
+
+if(document.getElementById("test")!=null){
+    document.documentElement.style.setProperty('--fall','100vh');
+}
