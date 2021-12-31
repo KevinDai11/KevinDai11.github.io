@@ -5,6 +5,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: -10;
   }
   
 .star{
@@ -237,6 +238,3 @@
   .star:nth-child(19)::before,.star:nth-child(19)::after{
     animation-delay: 3.4s;
   }
-  
-  
-  
