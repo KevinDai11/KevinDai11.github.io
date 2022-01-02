@@ -409,6 +409,8 @@ header{
 }
 
 .portfolio_img{
+    width: 600px;
+    height: 400px;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .2, 1),
         opacity 250ms linear;
@@ -469,7 +471,16 @@ header{
     display: block;
     width: 40em;
     height: 1px;
-    margin: -3em auto 0em;
+    margin: -3em auto 0;
+    background: var(--clr-teal);
+    opacity: 0.5;
+}
+.filler2{
+    content: '';
+    display: block;
+    width: 40em;
+    height: 1px;
+    margin: -3em auto 3em;
     background: var(--clr-teal);
     opacity: 0.5;
 }
@@ -506,3 +517,9 @@ header{
         padding: 1em 1.5em 1em;
     }
 }
+.notes{
+    text-align: center;
+}
+
+
+
