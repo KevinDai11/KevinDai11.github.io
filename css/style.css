@@ -469,18 +469,18 @@ header{
 .filler{
     content: '';
     display: block;
-    width: 40em;
+    width: 50em;
     height: 1px;
-    margin: -3em auto 0;
+    margin: -2em auto 1em;
     background: var(--clr-teal);
     opacity: 0.5;
 }
 .filler2{
     content: '';
     display: block;
-    width: 40em;
+    width: 60em;
     height: 1px;
-    margin: -3em auto 3em;
+    margin: -1em auto 3em;
     background: var(--clr-teal);
     opacity: 0.5;
 }
@@ -493,7 +493,7 @@ header{
         grid-template-areas: 
             "text text"
             "source link";
-        padding: 5em;
+        padding: 4em;
     }
     .portfolio_item_indiv{
         grid-area: text; 
