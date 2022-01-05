@@ -37,7 +37,7 @@
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1rem;
-
+        
     }
 }
 
@@ -243,14 +243,14 @@ header{
     width: 45px;
     height: 25px;
   }
-
+  
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-
+  
   /* The slider */
   .slider {
     position: absolute;
@@ -262,7 +262,7 @@ header{
     background-color: #ccc;
     transition: .4s;
   }
-
+  
   .slider:before {
     position: absolute;
     content: "";
@@ -273,24 +273,24 @@ header{
     background-color: white;
     transition: .4s;
   }
-
+  
   input:checked + .slider {
     background-color: var(--clr-light-maroon);
   }
-
-
+  
+  
   input:checked + .slider:before {
     transform: translateX(18px);
   }
-
+  
   /* Rounded sliders */
   .slider.round {
     border-radius: 25px;
   }
-
+  
   .slider.round:before {
     border-radius: 50%;
-  }
+  } 
 
 
 /*Intro*/
@@ -309,13 +309,13 @@ header{
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
-        grid-template-areas:
+        grid-template-areas: 
             "img title"
             "img subtitle";
         grid-template-columns: auto max-content;
-
+        
         }
-
+        
     .section_Subtitle_intro{
             align-self: start;
             grid-column: -1/1;
@@ -433,7 +433,7 @@ header{
         display: flex;
         max-width: 1200px;
         margin: auto;
-
+        
     }
     .activity + .activity{
         margin-left: 2em;
@@ -460,18 +460,18 @@ header{
 .portfolio_img{
     width: 600px;
     height: 400px;
-    transition:
+    transition: 
         transform 750ms cubic-bezier(.5, 0, .2, 1),
         opacity 250ms linear;
 }
 .portfolio_item:focus{
     position: relative;
     z-index: 2;
-}
+}       
 
 .portfolio_img:hover,
 .portfolio_item:focus .portfolio_img{
-    transform: scale(1.2);
+    transform: scale(1.2);          
     opacity: .75;
 }
 
@@ -485,7 +485,7 @@ header{
     padding: 2.5em 0;
     font-size:var(--fs-h3);
     font-weight: var(--fw-bold);
-
+    
 }
 
 
@@ -539,13 +539,13 @@ header{
         text-align: center;
         align-items: center;
         display: grid;
-        grid-template-areas:
+        grid-template-areas: 
             "text text"
             "source link";
         padding: 4em;
     }
     .portfolio_item_indiv{
-        grid-area: text;
+        grid-area: text; 
     }
     .source{
         grid-area: source;
