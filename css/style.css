@@ -20,6 +20,7 @@
     --clr-maroon: #800000;
     --clr-teal: #24fafa;
     --clr-light-maroon: #d03d55c4;
+    --clr-beige: #ebe991;
 
     --fs-h1:3rem;
     --fs-h2:2.25rem;
@@ -69,7 +70,7 @@ section{
 a{
     color: var(--clr-light);
     text-decoration: none;
-    color: var(--clr-teal);
+    color: var(--clr-beige);
 }
 a:hover{
     color: var(--clr-light-maroon);
@@ -115,6 +116,8 @@ h3{
 
 .section_Title_intro{
     font-weight: var(--fw-reg);
+    max-width: 650px;
+    text-align: center;
 }
 .section_Title_intro strong{
     display: block;
@@ -324,7 +327,7 @@ header{
             position: relative;
             left: -1.5em;
             width: calc(100% + 1.75em);
-            color: var(--clr-teal);
+            color: var(--clr-beige);
         }
      .intro_img{
          grid-area: img;
@@ -377,11 +380,11 @@ header{
         height: 2em;
         padding-left: 2.2em;
         padding-right: calc(200px+2em);
-        color: var(--clr-teal);
+        color: var(--clr-beige);
     }
     .about_me_img{
         grid-area: img;
-        background-color: var(--clr-teal);
+        background-color: var(--clr-beige);
         position: relative;
         z-index: 2;
     }
@@ -420,7 +423,7 @@ header{
     width: 2.5em;
     height: 1px;
     margin: .5em auto 1em;
-    background: var(--clr-teal);
+    background: var(--clr-beige);
     opacity: 0.5;
 }
 .activity{
@@ -521,7 +524,7 @@ header{
     width: 50em;
     height: 1px;
     margin: -2em auto 1em;
-    background: var(--clr-teal);
+    background: var(--clr-beige);
     opacity: 0.5;
 }
 .filler2{
@@ -530,7 +533,7 @@ header{
     width: 60em;
     height: 1px;
     margin: -1em auto 3em;
-    background: var(--clr-teal);
+    background: var(--clr-beige);
     opacity: 0.5;
 }
 @media (min-width: 600px){
@@ -569,6 +572,3 @@ header{
 .notes{
     text-align: center;
 }
-
-
-
