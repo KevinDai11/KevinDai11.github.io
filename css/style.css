@@ -304,7 +304,7 @@ header{
 .intro_img{
     box-shadow: var(--bs);
     min-height: 300px;
-    min-width: 300px;
+    min-width: 450px;
 }
 @media (min-width:600px){
     .intro{
@@ -331,7 +331,7 @@ header{
         }
      .intro_img{
          grid-area: img;
-         min-width: 300px;
+         min-width: 450px;
          position: relative;
          z-index: 2;
         }
@@ -462,7 +462,7 @@ header{
 
 .portfolio_img{
     width: 600px;
-    height: 400px;
+    height: 300px;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .2, 1),
         opacity 250ms linear;
