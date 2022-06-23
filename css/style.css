@@ -92,15 +92,20 @@ h3{
 }
 h1{
     font-size:var(--fs-h1);
-    background-image: var(--lg);
     background-clip: text;
+    background: -webkit-linear-gradient(var(--lg));
+    background: var(--lg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
-
 }
 h2{
     font-size: var(--fs-h2);
-    background-image: var(--lg);
     background-clip: text;
+    background: -webkit-linear-gradient(var(--lg));
+    background: var(--lg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
 }
 h3{
