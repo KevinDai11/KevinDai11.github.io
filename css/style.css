@@ -20,7 +20,7 @@
     --clr-maroon: #800000;
     --clr-teal: #24fafa;
     --clr-light-maroon: #d03d55c4;
-    --clr-beige: #ebe991;
+    --clr-beige: #eca35f ;
 
     --fs-h1:3rem;
     --fs-h2:2.25rem;
@@ -92,11 +92,11 @@ h3{
 }
 h1{
     font-size:var(--fs-h1);
-    color: var(--clr-beige);
+    color: whitesmoke;
 }
 h2{
     font-size: var(--fs-h2);
-    color: var(--clr-beige)
+    color: whitesmoke
 }
 h3{
     font-size: var(--fs-h3);
