@@ -92,19 +92,11 @@ h3{
 }
 h1{
     font-size:var(--fs-h1);
-    background: -webkit-linear-gradient(var(--lg));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+    color: var(--clr-beige);
 }
 h2{
     font-size: var(--fs-h2);
-    background-clip: text;
-    background: -webkit-linear-gradient(var(--lg));
-    background: var(--lg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    color: var(--clr-beige)
 }
 h3{
     font-size: var(--fs-h3);
