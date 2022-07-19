@@ -113,6 +113,7 @@ h3{
     font-weight: var(--fw-reg);
     max-width: 650px;
     text-align: center;
+    color: whitesmoke;
 }
 .section_Title_intro strong{
     display: block;
@@ -491,17 +492,54 @@ header{
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    position: relative;
     padding: 0;
 }
 .sociallist_item{
-    margin: 0 .5em;
-
+    position: relative;
+    margin: 0 35px;
+    
 }
+
 .sociallist_link{
-    padding: .5em;
+    text-decoration: none;
+}
+.sociallist_link:hover{
+    opacity: 1;
+}
+.sociallist_link .fa-brands{
+    font-size: var(--fs-h3);
+    color: #222;
 }
 
+.sociallist_item:before{
+    font-family: "FontAwesome";
+    font-size: var(--fs-h3);
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.sociallist_item:nth-child(1)::before{
+    content: "\f0e1";
+    color:#0072b1;
+    border-bottom: 4px solid #0072b1;
+}
+
+.sociallist_item:nth-child(2)::before{
+    content: "\f09b";
+    color:white;
+    border-bottom: 4px solid white;
+}
+.sociallist_item:nth-child(3)::before{
+    content: "\f099";
+    color:#1da1f2;
+    border-bottom: 4px solid #1da1f2;
+}
+.sociallist_item:hover::before{
+    height: 100%
+}
 
 /* individual portfolio item styling*/
 .portfolio_item_indiv{
