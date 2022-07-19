@@ -446,14 +446,12 @@ header{
     text-align: center;
 }
 
-* {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
     max-width: 750px;
     max-height: 750px;
-  position: relative;
-  margin: auto;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
@@ -565,7 +563,7 @@ header{
 .sociallist_item{
     position: relative;
     margin: 0 35px;
-    
+    cursor: pointer
 }
 
 .sociallist_link{
@@ -579,7 +577,7 @@ header{
     color: #222;
 }
 
-.sociallist_item:before{
+.sociallist_link:before{
     font-family: "FontAwesome";
     font-size: var(--fs-h3);
     position: absolute;
@@ -588,24 +586,24 @@ header{
     transition: 0.5s ease-in-out;
 }
 
-.sociallist_item:nth-child(1)::before{
+.sociallist_item:nth-child(1) .sociallist_link::before{
     content: "\f0e1";
     color:#0072b1;
     border-bottom: 4px solid #0072b1;
 }
 
-.sociallist_item:nth-child(2)::before{
+.sociallist_item:nth-child(2) .sociallist_link::before{
     content: "\f09b";
     color:white;
     border-bottom: 4px solid white;
 }
-.sociallist_item:nth-child(3)::before{
+.sociallist_item:nth-child(3) .sociallist_link::before{
     content: "\f099";
     color:#1da1f2;
     border-bottom: 4px solid #1da1f2;
 }
-.sociallist_item:hover::before{
-    height: 100%
+.sociallist_item:hover .sociallist_link::before{
+   height: 100%;
 }
 
 /* individual portfolio item styling*/
