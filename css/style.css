@@ -527,6 +527,10 @@ header{
   to {opacity: 1}
 }
 
+.portfolio_img{
+    width: 800px;
+    height: 500px;
+}
 
 /*Footer*/
 
